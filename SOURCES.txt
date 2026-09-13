@@ -1,0 +1,19 @@
+PixPuzzle -- Lisa Pascal sources (tool 419308)
+
+Nothing to build yet. When REV A lands:
+
+sources/PZL-MAIN.TEXT      the program
+sources/PZL-GLOBALS.TEXT   unit globals (menu constants, panes)
+sources/PZL-ALERTS.TEXT    alerts + menus (Alert tool input; menus match the
+                           mi* constants in GLOBALS BY POSITION)
+sources/PZL-MAKE.TEXT      the Workshop exec: compile, link, Alert tool,
+                           InstallTool (tool 419308, name PixPuzzle)
+sources/fmt_text.py        REQUIRED for building: converts each source to the
+                           Workshop paged .TEXT format (1024-byte header page,
+                           no line straddling a 1024 boundary, bare CR line
+                           endings). Raw text files will not compile.
+sources/fix_dc42.py        recomputes a DiskCopy 4.2 image's header checksums
+
+Build (same as LISACom): send the formatted files to their PZL/ names on the
+Lisa, then from the Workshop: R <PZL/MAKE. Afterwards L PZL/= must show a NEW
+PZL.OBJ -- the exec does not stop on a link error.

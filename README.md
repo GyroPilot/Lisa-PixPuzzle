@@ -1,5 +1,10 @@
 # PixPuzzle
 
+> **This repository is retired.** PixPuzzle was the working name. The finished game is
+> **Lisa Slide Puzzle 1.0** (the same tool number, 419308):
+> https://github.com/GyroPilot/Apple-LisaSlidePuzzle
+> Nothing was built here; this repository holds only the first project skeleton.
+
 A photo sliding puzzle for the Apple Lisa Office System: a native LOS
 desktop tool that cuts a 680 x 300 one-bit picture into tiles and lets you
 slide them back into order. Reuses the Atkinsonpoint .PIX pipeline and
